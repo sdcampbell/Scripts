@@ -18,11 +18,9 @@ else:
     print("Incompatible image type, exiting!")
     sys.exit()
 
-image_description = input("Enter an image description: ")
-
 with open(file_path, "rb") as image_file:
     encoded_string = base64.b64encode(image_file.read())
-    pyperclip.copy(f"<img src='data:image/{extension};base64,{encoded_string.decode('utf-8')}'>{image_description}</img>")
+    pyperclip.copy(f"<img src='data:image/{extension};base64,{encoded_string.decode('utf-8')}'>")
     print("Base64 encoded image tag has been copied to the clipboard.")
 
     
