@@ -6,4 +6,8 @@ Base 64 encodes a jpg or png image file and outputs to the clipboard the image t
 
 ## find_offset.py
 
-Finds the offset to the stack pointer from a core dump file.
+Finds the offset from the stack pointer to the return address from a core dump.
+
+Expects to find a core file in the current working directory
+
+Usage: python3 find_offset.py [length]
