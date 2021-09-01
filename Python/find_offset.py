@@ -8,7 +8,7 @@ def find_ip(payload):
     else:
         ip_offset = cyclic_find(corefile.read(corefile.sp, 4))
     ip_offset = cyclic_find(corefile.read(corefile.sp, 4))  # x64
-    info('located EIP/RIP offset at {a}'.format(a=ip_offset))
+    info('located offset at {a}'.format(a=ip_offset))
     return ip_offset
     
 def main():
