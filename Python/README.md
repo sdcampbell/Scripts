@@ -22,3 +22,9 @@ $ findoffset 1000
     Exe:       '/home/kali/Downloads/htb/pwn/htb-reg/reg' (0x400000)
 [*] located offset at 56
 ```
+
+## iplist.py
+
+iplist prints out a list of IP addresses when given a subnet as the only argument.
+
+Usage: `python3 iplist.py 192.168.1.0/24`
